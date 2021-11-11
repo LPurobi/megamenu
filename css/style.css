@@ -8,18 +8,14 @@
 body{
     font-family: "Inter", sans-serif;
 }
-.navbar{
-    
-}
+/* .navbar{
+    background-color: #333333 !important;
+} */
 .navbar ul li{
     padding: 0 17px;
 }
 .navbar ul li a{
     font-size: 13px;
-}
-
-.navbar li a.dropdown-item{
-    
 }
 
 .navbar-brand img{
@@ -51,6 +47,10 @@ i.fas.fa-shopping-bag{
     border: none;
 }
 
+.navbar-nav li:hover>ul.dropdown-menu{
+    display: block;
+}
+
 .dropdown-menu{
     display: none;
     position: absolute;
@@ -70,6 +70,12 @@ i.fas.fa-shopping-bag{
 
 .dropdown-menu a:hover {background-color: #333333; color: gainsboro;}
 
-.dropdown:hover .dropdown-menu {display: block;}
+.dropdown-submenu {
+    position:relative;
+}
 
-.dropdown:hover .nav-link {;}
+.dropdown-submenu>.dropdown-menu{
+    top: 0;
+    margin-top: -5px;
+    left: 100%;
+}
