@@ -307,7 +307,8 @@ nav .desktop-nav li a:hover {
 }
 /*hidden items*/
 
-.mobile-nav {
+.mobile-nav,
+.mobile-search-container {
   display: none;
 }
 
@@ -331,6 +332,7 @@ nav .desktop-nav li a:hover {
     justify-content: start;
     overflow: hidden;
     z-index: -1;
+    transition: all 1000ms ease;
    }
 
    .nav-container.active .desktop-nav {
@@ -390,15 +392,20 @@ nav .desktop-nav li a:hover {
      top: 4px;
    }
 
-   nav .menu-icon-container.active .menu-icon .line-1 {
+  .nav-container.active nav .menu-icon-container .menu-icon .line-1 {
      top: 0;
      transform: rotateZ(45deg);
    }
-   nav .menu-icon-container.active .menu-icon .line-2 {
+   .nav-container.active nav .menu-icon-container .menu-icon .line-2 {
     top: 0;
     transform: rotateZ(-45deg);
   }
-
+/* Bag icon animation */
+.nav-container.active .mobile-nav .link-bag {
+  transform: translateY(8px);
+  opacity: 0;
+  pointer-events: none;
+}
 
   /*Search box */
 
@@ -422,7 +429,12 @@ nav .desktop-nav li a:hover {
     display: flex;
     padding-bottom: 16px;
     align-items: center;
+    transform: rotateX(90deg);
   }
+.nav-container.active .mobile-search-container {
+  transform: rotateX(0deg);
+}
+
   .mobile-search-container .link-search {
     position: absolute;
     left: 24px;
@@ -438,9 +450,15 @@ nav .desktop-nav li a:hover {
   .mobile-search-container .cancel-btn {
     color: #2997ff;
     font-size: 17px;
-    padding: 0 16px;
     font-weight: 400;
     cursor: pointer;
+    width: 0px;
+    overflow: hidden;
+  }
+
+  .mobile-search-container .search-bar.active + .cancel-btn{
+    padding: 0 16px;
+    width: 74px;
   }
   .mobile-search-container .search-bar {
     flex: 1;
@@ -456,12 +474,20 @@ nav .desktop-nav li a:hover {
  }
 
   /* Quick links */
+  .mobile-search-container .search-bar.active ~ .quick-links {
+    top: 80px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .mobile-search-container .quick-links {
     position: absolute;
-    top: 80px;
     left:0;
     right: 0;
     padding:0 32px;
+    opacity: 0;
+    pointer-events: none;
+    top: 10px;
   }
   .mobile-search-container .quick-links ul {
     list-style: none;
@@ -488,6 +514,12 @@ nav .desktop-nav li a:hover {
   .mobile-search-container .quick-links ul li a:hover {
     color: #2997ff;
   }
+}
 
+input,
+div,
+span,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
 }
