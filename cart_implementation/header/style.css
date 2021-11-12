@@ -39,15 +39,7 @@ nav .desktop-nav {
   list-style: none;
 }
 
-nav .desktop-nav li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  opacity: 0.8;
-  transition: opacity 400ms;
-  
-  
-}
+
 
 nav .desktop-nav li a:hover {
   opacity: 1;
@@ -64,21 +56,39 @@ nav .desktop-nav li a:hover {
 }
 
 .link-search {
-  height: 50px;
-  width: 20px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: 17px;
+  height: 40px;
+  width: 15px;
+  background-size: 15px 88px;
+    background-repeat: no-repeat;
+  
+    line-height: 3.66667;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 8px;
+    opacity: .8;
   background-position: center;
   background-image: url(images/search-icon.svg);
 }
 
 .link-bag {
-  height: 50px;
-  width: 20px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: 17px;
+  height: 40px;
+  width: 15px;
+  background-size: 15px 88px;
+    background-repeat: no-repeat;
+  
+    line-height: 3.66667;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 8px;
+    opacity: .8;
   background-position: center;
   background-image: url(images/bag-icon.svg);
 }
@@ -520,6 +530,22 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0 0 1.5rem
+}
+a.nav-link{
+  font-size: 12px;
+    line-height: 3.66667;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #f5f5f7;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 8px;
+    height: 44px;
+    opacity: .8;
+    background: no-repeat;
+    text-decoration: none;
 }
 .dropdown-menu{
    border: 1px solid grey;
