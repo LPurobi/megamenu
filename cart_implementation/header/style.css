@@ -133,7 +133,10 @@ nav .desktop-nav li a:hover {
   opacity: 0.5;
   cursor: pointer;
   transition: all 400ms;
-  
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
 }
 
 .search-container .link-close:hover {
@@ -547,16 +550,7 @@ a.nav-link{
     background: no-repeat;
     text-decoration: none;
 }
-.dropdown-menu{
-   border: 1px solid grey;
-   border-radius:16px;
-   margin-left:-76px !important;
-   margin-top: 5px !important;
-   -webkit-border-radius:16px;
-   -moz-border-radius:16px;
-   -ms-border-radius:16px;
-   -o-border-radius:16px;
-}
+
 .cart-list{
   color:#777;
   font-family: '-apple-system, BlinkMacSystemFont, sans-serif';
@@ -614,6 +608,10 @@ div.dropdown-menu.show{
   height:310px;
   margin-bottom: 15px;
   background-color: #f8f9fa;
+  border: 1px solid grey;
+  border-radius:16px;
+  margin-left:-76px !important;
+  margin-top: 10px !important;
 }
 
 .cart-image{
