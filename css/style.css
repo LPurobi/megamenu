@@ -52,7 +52,7 @@ dropdown-menu a:hover {
 
 .dropdown-menu a{
     color: white;
-    padding: 5px 15px;
+    padding: 5px 10px;
     text-decoration: none;
     display: block;
 }
@@ -69,9 +69,9 @@ dropdown-menu a:hover {
     font-size: 13px;
 }
 
-/* .navbar-nav li:hover>ul.dropdown-menu{
+.navbar-nav li:hover>ul.dropdown-menu{
     display: block;
-} */
+}
 
 /* .dropdown-item:hover{
     background-color: #333333;
