@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>neobox</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+<head>
+    <title>neobox</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-                                <!--starting navbar-->
+    <!--starting navbar-->
 
     <div class="nav-container active">
         <nav class="move-up">
@@ -68,102 +70,117 @@
                 </li>
 
                 <li>
-                    
-                    <div class="dropdown show" >
-                       
-                        <a  href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="link-bag "></a>
+
+                    <div class="dropdown show">
+
+                        <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" class="link-bag "></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                          <a class="dropdown-item"  href="#"><img
-                            class ="cart-image" src="images/bag.svg"
-                             />
-                        <p class="cart-list " >Bag</p></a>
+                            <ul>
+                                <li class="cart-nav-bag">
+                                    <a class="dropdown-item-bag" href="#"><img class="cart-image" src="images/bag.svg" />
+                                        <p class="cart-list ">Bag</p>
+                                    </a>
 
-                          <a class="dropdown-item" href="#"  ><img class ="cart-image" src="images/favorites.svg"
-                             />
-                        <p class="cart-list" >Favourites</p></a>
+                                </li>
 
-                          <a class="dropdown-item" href="#"  ><img class ="cart-image" src="images/account.svg"
-                             />
-                        <p class="cart-list" >Account</p></a>
+                                <li class="cart-nav">
+                                    <a class="dropdown-item-fav" href="#"><img class="cart-image"
+                                            src="images/favorites.svg" />
+                                        <p class="cart-list">Favourites</p>
+                                    </a>
+                                </li>
 
-                        <a class="dropdown-item" href="#"  ><img class ="cart-image" src="images/signIn.svg"
-                             />
-                        <p class="cart-list" >Sign in</p></a>
+                                <li>
+                                    <a class="dropdown-item-fav" href="#"><img class="cart-image"
+                                            src="images/account.svg" />
+                                        <p class="cart-list">Account</p>
+                                    </a>
+
+                                </li>
+
+                                <li>
+
+                                    <a class="dropdown-item-sign" href="#"><img class="cart-image" src="images/signIn.svg" />
+                                        <p class="cart-list">Sign in</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                      </div>
-                    
+                    </div>
+
                 </li>
             </ul>
         </nav>
-        
-                                            <!--  end of navbar-->
-        
-                                            <!--starting search button functionality-->
+
+        <!--  end of navbar-->
+
+        <!--starting search button functionality-->
         <div class="search-container hide">
             <div class="link-search"></div>
-                <div class="search-bar">
-                    <form action="">
-                        <input type="text" placeholder="Search neobox.com">
-                    </form>
-                </div>
-                    <div class="link-close"></div>
-
-                    <div class="quick-links">
-                        <h2>Quick Links</h2>
-                        <ul>
-                            <li>
-                                <a href="#">visiting neobox store</a>
-                            </li>
-                            <li>
-                                <a href="#">visiting neobox link</a>
-                            </li>
-                            <li>
-                                <a href="#">visiting</a>
-                            </li>
-                            <li>
-                                <a href="#">neobox</a>
-                            </li>
-
-                        </ul>
-                    </div>
+            <div class="search-bar">
+                <form action="">
+                    <input type="text" placeholder="Search neobox.com">
+                </form>
             </div>
+            <div class="link-close"></div>
 
-            <div class="mobile-search-container">
-                <div class="link-search"></div>
-                    <div class="search-bar active">
-                        <form action="">
-                            <input type="text" placeholder="Search neobox.com">
-                        </form>
-                    </div>
-                    <span class="cancel-btn">Cancel</span>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <a href="#">visiting neobox store</a>
+                    </li>
+                    <li>
+                        <a href="#">visiting neobox link</a>
+                    </li>
+                    <li>
+                        <a href="#">visiting</a>
+                    </li>
+                    <li>
+                        <a href="#">neobox</a>
+                    </li>
 
-                        <div class="quick-links">
-                            <h2>Quick Links</h2>
-                            <ul>
-                                <li>
-                                    <a href="#">visiting neobox store</a>
-                                </li>
-                                <li>
-                                    <a href="#">visiting neobox link</a>
-                                </li>
-                                <li>
-                                    <a href="#">visiting</a>
-                                </li>
-                                <li>
-                                    <a href="#">neobox</a>
-                                </li>
-    
-                            </ul>
-                        </div>
-                </div>
+                </ul>
+            </div>
         </div>
 
-        <div class="overlay"></div>
+        <div class="mobile-search-container">
+            <div class="link-search"></div>
+            <div class="search-bar active">
+                <form action="">
+                    <input type="text" placeholder="Search neobox.com">
+                </form>
+            </div>
+            <span class="cancel-btn">Cancel</span>
 
-                        <!--  end of search button functionality-->
-                   
-       
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <a href="#">visiting neobox store</a>
+                    </li>
+                    <li>
+                        <a href="#">visiting neobox link</a>
+                    </li>
+                    <li>
+                        <a href="#">visiting</a>
+                    </li>
+                    <li>
+                        <a href="#">neobox</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!--  end of search button functionality-->
+
+
     <script src="main.js"></script>
 </body>
-</html>
 
+</html>
