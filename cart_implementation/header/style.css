@@ -39,15 +39,7 @@ nav .desktop-nav {
   list-style: none;
 }
 
-nav .desktop-nav li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-  opacity: 0.8;
-  transition: opacity 400ms;
-  
-  
-}
+
 
 nav .desktop-nav li a:hover {
   opacity: 1;
@@ -64,21 +56,39 @@ nav .desktop-nav li a:hover {
 }
 
 .link-search {
-  height: 50px;
-  width: 20px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: 17px;
+  height: 40px;
+  width: 15px;
+  background-size: 15px 88px;
+    background-repeat: no-repeat;
+  
+    line-height: 3.66667;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 8px;
+    opacity: .8;
   background-position: center;
   background-image: url(images/search-icon.svg);
 }
 
 .link-bag {
-  height: 50px;
-  width: 20px;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: 17px;
+  height: 40px;
+  width: 15px;
+  background-size: 15px 88px;
+    background-repeat: no-repeat;
+  
+    line-height: 3.66667;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 8px;
+    opacity: .8;
   background-position: center;
   background-image: url(images/bag-icon.svg);
 }
@@ -123,7 +133,10 @@ nav .desktop-nav li a:hover {
   opacity: 0.5;
   cursor: pointer;
   transition: all 400ms;
-  
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  -ms-transition: all 400ms;
+  -o-transition: all 400ms;
 }
 
 .search-container .link-close:hover {
@@ -521,16 +534,23 @@ ul {
     padding: 0;
     margin: 0 0 1.5rem
 }
-.dropdown-menu{
-   border: 1px solid grey;
-   border-radius:16px;
-   margin-left:-76px !important;
-   margin-top: 5px !important;
-   -webkit-border-radius:16px;
-   -moz-border-radius:16px;
-   -ms-border-radius:16px;
-   -o-border-radius:16px;
+a.nav-link{
+  font-size: 12px;
+    line-height: 3.66667;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #f5f5f7;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 8px;
+    height: 44px;
+    opacity: .8;
+    background: no-repeat;
+    text-decoration: none;
 }
+
 .cart-list{
   color:#777;
   font-family: '-apple-system, BlinkMacSystemFont, sans-serif';
@@ -588,6 +608,10 @@ div.dropdown-menu.show{
   height:310px;
   margin-bottom: 15px;
   background-color: #f8f9fa;
+  border: 1px solid grey;
+  border-radius:16px;
+  margin-left:-76px !important;
+  margin-top: 10px !important;
 }
 
 .cart-image{
